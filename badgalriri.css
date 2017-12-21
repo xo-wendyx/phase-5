@@ -1,0 +1,99 @@
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  background-color:black;
+  margin:0;
+}
+
+
+
+.column1, .column3{
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  height: calc(100%/3);
+  width: 100%;
+}
+
+.column2{
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column4, .column5, .column6{
+  height: 100vh;
+  width: calc(100vw/3 - 4px);
+  display: flex;
+  flex-wrap: wrap;
+}
+.box1 {
+  height: calc(100%/2);
+  width: 100%;
+}
+
+.info3{
+  background-color:black;
+}
+
+img {
+  margin:auto;
+  max-width: 100%;
+  max-height: 100%;
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .8s ease-in-out;
+    }
+img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+
+.riri {content:url(https://media.vanityfair.com/photos/56f96e4ab24e140048474af3/master/pass/rihanna-anti-world-tour-barclays.jpg);}
+.fenty {content:url(https://www.sephora.com/contentimages/sprinkles/bp/banner_090817_image_18592.jpg);}
+.fashion {content:url(https://i.ytimg.com/vi/JNGSYKxqwpc/maxresdefault.jpg);}
+.major {content:url(http://livingcivil.com/wp-content/uploads/2017/09/06ea72_de200694e47e4f979cd6063e9bfc47dc-mv2_d_1800_1200_s_2.jpg);}
+.journal {content:url(https://www.fashiongonerogue.com/wp-content/uploads/2015/02/rihanna-dior-fashion-shoot-w-korea02.jpg);}
+.dior {content:url(http://78.media.tumblr.com/f520cd145b6adccd901a365c56165971/tumblr_njclhw9t2L1rql1mzo1_1280.jpg);}
+.vogue {content:url(http://allafricanhits.com/wp-content/uploads/2016/07/rihanna-wallpaper-2016.jpg);}
+.done {content:url(https://rihannadaily.com/wp-content/uploads/2017/10/IMG_3165-1-520x292.jpg);}
+
+@media screen and (max-width:800px){
+  .myslides{
+    height: 50vh;
+    width: 100vw;
+    background-color: #AB1D23;
+  }
+
+ .column1,.column3,.column4, .column5, .column6{
+   height: calc(180vw + 45px);
+   width: 100%;
+   justify-content: center;
+  }
+
+  .box {
+    height: 60vw;
+    width: 60vw;
+    margin-top: 15px;
+  }
+
+  .box1{
+    height: 60vw;
+    width: 60vw;
+    margin-top: 15px;
+  }
+  .column2 {
+    height: calc(120vw + 30px);
+    width:100%;
+    justify-content: center;
+  }
+}
